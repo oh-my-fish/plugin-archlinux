@@ -1,4 +1,4 @@
-which abs ^ /dev/null > /dev/null
+which abs 2> /dev/null > /dev/null
 if test $status -ne 1
   function pacupd -d "Update and refresh the local package and ABS databases against repositories"
     sudo pacman -Sy; and sudo abs
