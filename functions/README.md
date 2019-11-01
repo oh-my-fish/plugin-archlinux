@@ -1,5 +1,6 @@
+# Available funtions
 
-# pacman functions #
+## pacman functions
 
 * `pacin`
 Install specific package(s) from the repositories
@@ -28,6 +29,9 @@ Search for package(s) in the local database
 * `pacupd`
 Update and refresh the local package and ABS databases against repositories
 
+* `pacupg`
+Synchronize with repositories before upgrading packages that are out of date on the local system
+
 * `pacinsd`
 Install given package(s) as dependencies of another package
 
@@ -46,7 +50,12 @@ Delete all orphaned packages
 * `pacdisowned`
 List all disowned files in your system. For a prettier output run `pacdisowned | less +F`
 
+## yay functions
 
-# Based on aliases from oh-my-zsh
+All the yay functions are the same as the ones as the pacman functions but replacing `pac` with `ya`, e.g. `yain` is
+the same function as `pacin` but will search also in the AUR. `paclist`, `paclsorphans`, `pacrmorphans` and
+`pacdisowned` are not implemented since it doesn't make a lot of sense to use yay for those.
+
+## Based on aliases from oh-my-zsh
 
 Source: https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/archlinux/archlinux.plugin.zsh
