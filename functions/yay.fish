@@ -28,7 +28,7 @@ if test $status -ne 1
         yay -Ss $argv
     end
 
-    function yacloc -d "Display information about a given package in the local database"
+    function yaloc -d "Display information about a given package in the local database"
         yay -Qi $argv
     end
 
